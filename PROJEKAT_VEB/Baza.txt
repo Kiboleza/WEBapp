@@ -1,0 +1,30 @@
+﻿CREATE TABLE projekat(
+ID int primary key not null identity(1,1),
+Program nvarchar(30) not null,
+Opis nvarchar(100) not null,
+)
+
+INSERT INTO projekat VALUES('C#','Izrada FRONT END i BACK END aplikacije')
+INSERT INTO projekat VALUES('C#','Izrada WINDOWS FORMS aplikacije')
+INSERT INTO projekat VALUES('SQL','Izrada NORTWIND baze podataka')
+
+CREATE TABLE Programi(
+ID int primary key not null identity(1,1),
+Naziv nvarchar(30) not null,
+Znanje nvarchar(30) not null,
+)
+
+INSERT INTO Programi VALUES('VISUAL STUDIO','ODLICNO')
+INSERT INTO Programi VALUES('SSMS','ODLICNO')
+INSERT INTO Programi VALUES('VISUAL STUDIO CODE','ODLICNO')
+INSERT INTO Programi VALUES('DEV-CPP','SOLIDNO')
+
+CREATE TABLE Sposobnosti(
+ID int primary key not null identity(1,1)
+Nacin nvarchar(30) not null,
+Ocena int not null
+)
+
+INSERT INTO Sposobnosti VALUES('SOLO',5)
+INSERT INTO Sposobnosti VALUES('TEAM',5)
+INSERT INTO Sposobnosti VALUES('FIFTY-FIFTY',5)
